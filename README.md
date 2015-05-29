@@ -69,7 +69,7 @@ The pixels in the skin that are available for use in a 1.8 skin, in addition to 
  - 8x4+12,32
  - 8x4+36,32
  - 4x4+52,32
- - 56x32+8,16
+ - 8x16+56,32
  - 4x4+0,48
  - 8x4+12,48
  - 8x4+28,48
