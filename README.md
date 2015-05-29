@@ -63,6 +63,7 @@ The pixels in the skin that are available for use are (in notation WIDTHxHEIGHT+
  - 8x4+36,16
  - 4x4+52,16
  - 8x16+56,16
+ 
 The pixels in the skin that are available for use in a 1.8 skin, in addition to the above, are:
  - 4x4+0,32
  - 8x4+12,32
