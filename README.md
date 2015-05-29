@@ -49,7 +49,7 @@ The Data section comes immediately after the Header section, and MUST consist of
 The contents of the root Compound tag can be any kind of tag other than End, and the name MUST be a Java package name or Forge mod ID, followed by an at ("@") sign and a version in an arbitrary format. It is the responsibility of the mod or program parsing the data to understand the version string and the contents of the tag.
 
 ## Encoding
-As mentioned in the preface, Minecraft skins contain unused pixels. Some mods with non-MCSDEF formats already use these pixels, but most only use a 8x8 pixel box in the top right of the skin. To help maintain compatiblity, MCSDEF implementations SHOULD NOT use this area of the skin.
+As mentioned in the preface, Minecraft skins contain unused pixels. Some mods with non-MCSDEF formats already use these pixels, but most only use a 8x8 pixel box in the top leftr of the skin. To help maintain compatiblity, MCSDEF implementations SHOULD NOT use this area of the skin.
 
 Including this restriction, this leaves 768 pixels of space in a 1.8 skin, and 412 in a pre-1.8 skin. This gives us 3072 bytes to work with in a 1.8 skin, and 1648 in pre-1.8 skins.
 The simplest way to encode binary data into an image, and the method used by MCSDEF, is to break up the data into 32-bit chunks and store the first byte in R, second in G, the third in B, and the fourth in A. If the size of the data is not a multiple of 4, the unused bytes SHOULD be set to 00000000, and readers will ignore it due to the length field in the header.
